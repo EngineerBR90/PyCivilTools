@@ -37,7 +37,7 @@ def calcular_perda_carga(vazao, diametro, comprimento, comp_equivalente, materia
         \n### Recomendações de segurança:
         - Adicione +20% como margem de segurança: {perda_total * 1.20:.3f} mca
         - Adicione ao cálculo a altura geométrica característica da instalação 
-        - (entre o N.A. e a posição da MB)
+          (entre o N.A. e a posição da MB)
         """
         return resultado_texto
     except ValueError:
