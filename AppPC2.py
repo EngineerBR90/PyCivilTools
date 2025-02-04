@@ -35,7 +35,7 @@ def calcular_perda_carga(vazao, diametro, comprimento, comp_equivalente, materia
 
         resultado_texto += f"""
         \n### Recomendações de segurança:
-        - Adicione **+20% de margem**: "{perda_total * 1.20:.3f} mca"
+        - Adicione +20% como margem de segurança: {perda_total * 1.20:.3f} mca
         """
         return resultado_texto
     except ValueError:
