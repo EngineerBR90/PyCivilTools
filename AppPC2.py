@@ -50,7 +50,7 @@ diametro = st.number_input("Diâmetro interno da tubulação (mm):", min_value=0
 comprimento = st.number_input("Comprimento reto da tubulação (m):", min_value=0.0, step=0.1)
 comp_equivalente = st.number_input("Comprimento equivalente total dos acessórios (m):", min_value=0.0, step=0.1)
 
-material = st.selectbox("Material da tubulação:", ["PVC", "Cobre", "Aço"])
+material = st.selectbox("Material da tubulação:", ["PVC", "Cobre"])
 
 if st.button("Calcular"):
     resultado = calcular_perda_carga(vazao, diametro, comprimento, comp_equivalente, material)
