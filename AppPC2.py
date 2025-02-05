@@ -29,9 +29,9 @@ def calcular_perda_carga(vazao, diametro, comprimento, comp_equivalente, materia
         """
 
         if velocidade > 3.0:
-            resultado_texto += "\n⚠️ **ALERTA**: Velocidade acima de 3.0 m/s! Risco de erosão e ruído."
+            resultado_texto += "\n⚠️ **ALERTA**: Velocidade acima de 3.0 m/s! Risco de aprisionamento, cavitação e/ou ruído."
         elif velocidade < 1.5:
-            resultado_texto += "\nℹ️ **AVISO**: Velocidade abaixo de 1.5 m/s. Pode haver acúmulo de partículas."
+            resultado_texto += "\nℹ️ **AVISO**: Velocidade abaixo de 1.5 m/s. Pode haver acúmulo de partículas, bolsão de ar e formação de biofilme."
 
         resultado_texto += f"""
         \n### Recomendações de segurança:
